@@ -15,9 +15,6 @@
   width: 100%;
   line-height: 22px;
   cursor: text;
-  .badge {
-    border-radius: 0;
-  }
 }
 
 /* my override */
@@ -28,16 +25,17 @@
   box-shadow: inherit !important;
 }
 .bootstrap-tagsinput.bootstrap-tagsinput-sm {
-  padding: 2px 4px;
-  border-radius: 2px;
-  line-height: 18px;
-  min-height: $input-height-sm !important;
+  /* line-height: 18px; */
+  min-height: calc(1.5em + .5rem + 2px) !important;
+  font-size: .9rem;
 }
 .bootstrap-tagsinput.bootstrap-tagsinput-lg {
-  padding: 6px 8px;
-  border-radius: 6px;
-  line-height: 26px;
-  min-height: $input-height-lg !important;
+  /* line-height: 26px; */
+  min-height: calc(1.5em + 1rem + 2px) !important;
+  font-size: 1.2rem;
+}
+.bootstrap-tagsinput badge {
+  border-radius: 0;
 }
 
 .bootstrap-tagsinput input {
