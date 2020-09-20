@@ -1,6 +1,6 @@
 /*
  * bootstrap-tagsinput v0.8.0
- * 
+ *
  */
 
 .bootstrap-tagsinput {
@@ -15,7 +15,31 @@
   width: 100%;
   line-height: 22px;
   cursor: text;
+  .badge {
+    border-radius: 0;
+  }
 }
+
+/* my override */
+.bootstrap-tagsinput {
+  border-radius: .25rem;
+  min-height: calc(2.25rem + 2px);
+  line-height:1.5 !important;
+  box-shadow: inherit !important;
+}
+.bootstrap-tagsinput.bootstrap-tagsinput-sm {
+  padding: 2px 4px;
+  border-radius: 2px;
+  line-height: 18px;
+  min-height: $input-height-sm !important;
+}
+.bootstrap-tagsinput.bootstrap-tagsinput-lg {
+  padding: 6px 8px;
+  border-radius: 6px;
+  line-height: 26px;
+  min-height: $input-height-lg !important;
+}
+
 .bootstrap-tagsinput input {
   border: none;
   box-shadow: none;

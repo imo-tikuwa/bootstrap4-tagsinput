@@ -1,6 +1,6 @@
 /*
  * bootstrap-tagsinput v0.8.0
- * 
+ *
  */
 
 (function ($) {
@@ -56,6 +56,11 @@
     this.inputSize = Math.max(1, this.placeholderText.length);
 
     this.$container = $('<div class="bootstrap-tagsinput"></div>');
+    if (this.$element.hasClass('form-control-sm')) {
+      this.$container.addClass('bootstrap-tagsinput-sm');
+    } else if (this.$element.hasClass('form-control-lg')) {
+      this.$container.addClass('bootstrap-tagsinput-lg');
+    }
     this.$input = $('<input type="' + this.type + '" name="' + this.name + '" placeholder="' + this.placeholderText + '"/>').appendTo(this.$container);
 
     this.$element.before(this.$container);
