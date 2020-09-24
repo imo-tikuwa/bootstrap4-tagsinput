@@ -28,14 +28,19 @@
   /* line-height: 18px; */
   min-height: calc(1.5em + .5rem + 2px) !important;
   font-size: .9rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .bootstrap-tagsinput.bootstrap-tagsinput-lg {
   /* line-height: 26px; */
   min-height: calc(1.5em + 1rem + 2px) !important;
   font-size: 1.2rem;
 }
-.bootstrap-tagsinput badge {
+.bootstrap-tagsinput .badge {
   border-radius: 0;
+}
+.bootstrap-tagsinput.bootstrap-tagsinput-sm .bootstrap-tagsinput .badge {
+  margin: 3px 0;
 }
 
 .bootstrap-tagsinput input {
